@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "player_image": "https://i.ibb.co.com/7t8B7H2d/images.jpg",
+    "player_name": "Tamim Iqbal",
+    "player_country": "Bangladesh",
+    "playing_role": "Batsman",
+    "rating": 8.7,
+    "bating_style": "Left-handed",
+    "bowling_style": "N/A",
+    "price": 3000
+  },
+  {
+    "id": 2,
+    "player_image": "https://i.ibb.co.com/j1K0Dt1/desktop-wallpaper-list-of-most-liked-facebook-pages-in-bangladesh-shakib-al-hasan.jpg",
+    "player_name": "Shakib Al Hasan",
+    "player_country": "Bangladesh",
+    "playing_role": "All-rounder",
+    "rating": 9.4,
+    "bating_style": "Left-handed",
+    "bowling_style": "Slow left-arm orthodox",
+    "price": 17000
+  },
+  {
+    "id": 3,
+    "player_image": "https://i.ibb.co.com/KMjQDCB/images.jpg",
+    "player_name": "Chris Gayle",
+    "player_country": "West Indies",
+    "playing_role": "Batsman",
+    "rating": 9.1,
+    "bating_style": "Left-handed",
+    "bowling_style": "Right-arm off-break",
+    "price": 14000
+  },
+  {
+    "id": 4,
+    "player_image": "https://i.ibb.co.com/S4Rj5Ym2/licensed-image.webp",
+    "player_name": "Mustafizur Rahman",
+    "player_country": "Bangladesh",
+    "playing_role": "Bowler",
+    "rating": 8.9,
+    "bating_style": "Left-handed",
+    "bowling_style": "Left-arm medium-fast",
+    "price": 9000
+  },
+  {
+    "id": 5,
+    "player_image": "https://i.ibb.co.com/9mtv3Whz/images.webp",
+    "player_name": "Andre Russell",
+    "player_country": "West Indies",
+    "playing_role": "All-rounder",
+    "rating": 9.0,
+    "bating_style": "Right-handed",
+    "bowling_style": "Right-arm fast-medium",
+    "price": 5000
+  },
+  {
+    "id": 6,
+    "player_image": "https://i.ibb.co.com/kVTq7GZ0/images-1.webp",
+    "player_name": "Mashrafe Mortaza",
+    "player_country": "Bangladesh",
+    "playing_role": "Bowler",
+    "rating": 8.1,
+    "bating_style": "Right-handed",
+    "bowling_style": "Right-arm medium-fast",
+    "price": 2000
+  },
+  {
+    "id": 7,
+    "player_image": "https://i.ibb.co.com/jkHPPC7h/images-2.webp",
+    "player_name": "Kieron Pollard",
+    "player_country": "West Indies",
+    "playing_role": "All-rounder",
+    "rating": 8.6,
+    "bating_style": "Right-handed",
+    "bowling_style": "Right-arm medium-fast",
+    "price": 3500
+  },
+  {
+    "id": 8,
+    "player_image": "https://i.ibb.co.com/S4h1X5JB/images-3.webp",
+    "player_name": "Mushfiqur Rahim",
+    "player_country": "Bangladesh",
+    "playing_role": "Wicketkeeper-Batsman",
+    "rating": 8.8,
+    "bating_style": "Right-handed",
+    "bowling_style": "N/A",
+    "price": 3000
+  },
+  {
+    "id": 9,
+    "player_image": "https://i.ibb.co.com/60WspZWK/images-4.webp",
+    "player_name": "Rashid Khan",
+    "player_country": "Afghanistan",
+    "playing_role": "All-rounder",
+    "rating": 9.6,
+    "bating_style": "Right-handed",
+    "bowling_style": "Right-arm leg-break",
+    "price": 60000
+  },
+  {
+    "id": 10,
+    "player_image": "https://i.ibb.co.com/KpGHBmH9/licensed-image-1.webp",
+    "player_name": "Taskin Ahmed",
+    "player_country": "Bangladesh",
+    "playing_role": "Bowler",
+    "rating": 8.5,
+    "bating_style": "Left-handed",
+    "bowling_style": "Right-arm fast",
+    "price": 2500
+  },
+  {
+    "id": 11,
+    "player_image": "https://i.ibb.co.com/5b9vs7B/images-5.webp",
+    "player_name": "Mahedi Hasan",
+    "player_country": "Bangladesh",
+    "playing_role": "All-rounder",
+    "rating": 8.3,
+    "bating_style": "Right-handed",
+    "bowling_style": "Right-arm off-break",
+    "price": 15000
+  },
+  {
+    "id": 12,
+    "player_image": "https://i.ibb.co.com/5xKyfGp5/images-6.webp",
+    "player_name": "Litton Das",
+    "player_country": "Bangladesh",
+    "playing_role": "Wicketkeeper-Batsman",
+    "rating": 8.4,
+    "bating_style": "Right-handed",
+    "bowling_style": "N/A",
+    "price": 2000
+  }
+]
