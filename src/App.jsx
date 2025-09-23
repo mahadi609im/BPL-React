@@ -13,7 +13,12 @@ const App = () => {
 
   const handleChoosePlayer = player => {
     let newChoose = [...choosePlayer, player];
-    setChoosePlayer(newChoose);
+    if (newChoose.length < 7) {
+      setChoosePlayer(newChoose);
+    } else {
+      alert('You can only 6 players buy');
+      return;
+    }
     const newCoins = coins - player.price;
     setCoins(newCoins);
   };
@@ -36,7 +41,11 @@ const App = () => {
             <h3 className="text-[28px] font-bold">Available Players </h3>
           ) : (
             <h3 className="text-[28px] font-bold">
-              Selected Player ({choosePlayer.length}/6){' '}
+              Selected Player (
+              <span className={choosePlayer.length === 6 && 'text-red-500'}>
+                {choosePlayer.length}/6
+              </span>
+              ){' '}
             </h3>
           )}
           <div className="border border-[#ffffff1a] ">
@@ -58,7 +67,11 @@ const App = () => {
                   : 'bg-[#ffffff1a] text-[#fffcffb3] hover:text-[#E7FE29]'
               }`}
             >
-              Selected ({choosePlayer.length})
+              Selected (
+              <span className={choosePlayer.length === 6 && 'text-red-500'}>
+                {choosePlayer.length}
+              </span>
+              )
             </button>
           </div>
         </div>
