@@ -1,6 +1,6 @@
 import { RiDeleteBin2Fill } from 'react-icons/ri';
 const SelectPlayer = ({ choosePl, handlePlayerRemove }) => {
-  const { id, player_name, playing_role, player_image } = choosePl;
+  const { id, player_name, playing_role, player_image, price } = choosePl;
   return (
     <div className="p-4 md:p-6 border border-[#ffffff1a] bg-[#1f2730] w-full rounded-2xl flex justify-between items-center">
       <div className="flex gap-3 md:gap-6 items-center">
@@ -13,7 +13,7 @@ const SelectPlayer = ({ choosePl, handlePlayerRemove }) => {
         </div>
         <div className="space-y-3">
           <h3 className="text-base md:text-xl lg:text-2xl font-semibold">
-            {player_name}
+            {player_name} | {price}
           </h3>
           <p className="text-sm md:text-base font-normal text-[#fffcffb3]">
             {playing_role}

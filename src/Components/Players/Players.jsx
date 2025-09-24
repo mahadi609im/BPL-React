@@ -1,7 +1,7 @@
 import { use } from 'react';
 import Player from './Player';
 
-const Players = ({ playersData, handleChoosePlayer }) => {
+const Players = ({ playersData, handleChoosePlayer, chooseBtn }) => {
   const players = use(playersData);
 
   return (
@@ -11,6 +11,7 @@ const Players = ({ playersData, handleChoosePlayer }) => {
           key={player.id}
           player={player}
           handleChoosePlayer={handleChoosePlayer}
+          chooseBtn={chooseBtn}
         ></Player>
       ))}
     </div>

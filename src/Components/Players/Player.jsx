@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaFlag, FaUser } from 'react-icons/fa';
-const Player = ({ player, handleChoosePlayer }) => {
+const Player = ({ player, handleChoosePlayer, chooseBtn }) => {
   const {
     id,
     player_image,
@@ -13,8 +13,7 @@ const Player = ({ player, handleChoosePlayer }) => {
     price,
   } = player;
 
-  const [chooseClick, setChooseClick] = useState(false);
-
+  const chooseClick = chooseBtn[id] || false;
   return (
     <div className="p-6 border border-[#ffffff1a] rounded-2xl shadow-lg bg-[#1f2730]">
       <div className="w-full h-[240px] border border-[#ffffff1a]  rounded-2xl mb-6">
@@ -55,10 +54,9 @@ const Player = ({ player, handleChoosePlayer }) => {
               <span className="text-[#E7FE29]">USD</span>
             </h5>
             <button
-              disabled={chooseClick === true}
+              disabled={chooseClick}
               onClick={() => {
                 handleChoosePlayer(player);
-                setChooseClick(true);
               }}
               className={`rounded-lg py-2 px-4 ${
                 !chooseClick

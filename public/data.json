@@ -8,7 +8,7 @@
     "rating": 8.7,
     "bating_style": "Left-handed",
     "bowling_style": "N/A",
-    "price": 3000
+    "price": 3
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "rating": 9.4,
     "bating_style": "Left-handed",
     "bowling_style": "Slow left-arm orthodox",
-    "price": 17000
+    "price": 1
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "rating": 9.1,
     "bating_style": "Left-handed",
     "bowling_style": "Right-arm off-break",
-    "price": 14000
+    "price": 4
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "rating": 8.9,
     "bating_style": "Left-handed",
     "bowling_style": "Left-arm medium-fast",
-    "price": 9000
+    "price": 9
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "rating": 9.0,
     "bating_style": "Right-handed",
     "bowling_style": "Right-arm fast-medium",
-    "price": 5000
+    "price": 5
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "rating": 8.1,
     "bating_style": "Right-handed",
     "bowling_style": "Right-arm medium-fast",
-    "price": 2000
+    "price": 2
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "rating": 8.6,
     "bating_style": "Right-handed",
     "bowling_style": "Right-arm medium-fast",
-    "price": 3500
+    "price": 3
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "rating": 8.8,
     "bating_style": "Right-handed",
     "bowling_style": "N/A",
-    "price": 3000
+    "price": 7
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "rating": 9.6,
     "bating_style": "Right-handed",
     "bowling_style": "Right-arm leg-break",
-    "price": 60000
+    "price": 6
   },
   {
     "id": 10,
@@ -107,7 +107,7 @@
     "rating": 8.5,
     "bating_style": "Left-handed",
     "bowling_style": "Right-arm fast",
-    "price": 2500
+    "price": 2
   },
   {
     "id": 11,
@@ -118,7 +118,7 @@
     "rating": 8.3,
     "bating_style": "Right-handed",
     "bowling_style": "Right-arm off-break",
-    "price": 15000
+    "price": 5
   },
   {
     "id": 12,
@@ -129,6 +129,6 @@
     "rating": 8.4,
     "bating_style": "Right-handed",
     "bowling_style": "N/A",
-    "price": 2000
+    "price": 2
   }
 ]

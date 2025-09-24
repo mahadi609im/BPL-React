@@ -3,24 +3,53 @@ import Banner from './Components/Banner/Banner';
 import { Suspense, useState } from 'react';
 import Players from './Components/Players/Players';
 import SelectPlayers from './Components/SelectPlayers/SelectPlayers';
+import { Bounce, toast, ToastContainer } from 'react-toastify';
 
 let playersData = fetch('data.json').then(res => res.json());
 
 const App = () => {
   const [toggleClick, setToggleClick] = useState(true);
   const [choosePlayer, setChoosePlayer] = useState([]);
-  const [coins, setCoins] = useState(99999);
+  const [coins, setCoins] = useState(15);
+  const [chooseBtn, setChooseBtn] = useState({});
 
   const handleChoosePlayer = player => {
     let newChoose = [...choosePlayer, player];
+    const newCoins = coins - player.price;
     if (newChoose.length < 7) {
-      setChoosePlayer(newChoose);
+      if (coins < player.price) {
+        toast.error('Not enough coins', {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: false,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'dark',
+          transition: Bounce,
+        });
+
+        setChooseBtn(prev => ({ ...prev, [player.id]: false }));
+      } else {
+        setChooseBtn(prev => ({ ...prev, [player.id]: true }));
+        setCoins(newCoins);
+        setChoosePlayer(newChoose);
+      }
     } else {
-      alert('You can only 6 players buy');
+      toast.error('You can only 6 players buy', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+        transition: Bounce,
+      });
       return;
     }
-    const newCoins = coins - player.price;
-    setCoins(newCoins);
   };
 
   const handlePlayerRemove = removePlayer => {
@@ -42,7 +71,7 @@ const App = () => {
           ) : (
             <h3 className="text-[28px] font-bold">
               Selected Player (
-              <span className={choosePlayer.length === 6 && 'text-red-500'}>
+              <span className={choosePlayer.length === 6 ? 'text-red-500' : ''}>
                 {choosePlayer.length}/6
               </span>
               ){' '}
@@ -68,7 +97,7 @@ const App = () => {
               }`}
             >
               Selected (
-              <span className={choosePlayer.length === 6 && 'text-red-500'}>
+              <span className={choosePlayer.length === 6 ? 'text-red-500' : ''}>
                 {choosePlayer.length}
               </span>
               )
@@ -80,6 +109,7 @@ const App = () => {
             <Players
               handleChoosePlayer={handleChoosePlayer}
               playersData={playersData}
+              chooseBtn={chooseBtn}
             ></Players>
           ) : (
             <SelectPlayers
@@ -89,6 +119,19 @@ const App = () => {
           )}
         </Suspense>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
     </div>
   );
 };
