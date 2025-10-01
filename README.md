@@ -1,3 +1,3 @@
 # React + Vite
 
-[Live link](bpl-five-maha609im.netlify.app)
+[Live link](https://bpl-five-maha609im.netlify.app/)
